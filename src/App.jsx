@@ -9,6 +9,7 @@ import {
   WalletConnectButton
 } from '@solana/wallet-adapter-react-ui';
 import { clusterApiUrl } from '@solana/web3.js';
+import Balance from './Balance';
 
 // Default styles that can be overridden by your app
 import '@solana/wallet-adapter-react-ui/styles.css';
@@ -28,6 +29,7 @@ function App() {
               hi there
             </div>
             <Airdrop />
+            <Balance />
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
