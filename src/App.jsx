@@ -15,6 +15,7 @@ import "./index.css";
 // Default styles that can be overridden by your app
 import '@solana/wallet-adapter-react-ui/styles.css';
 import Airdrop from './Airdrop';
+import { Toaster } from "@/components/ui/sonner"
 
 function App() {
   const endpoint = import.meta.env.VITE_API_ENDPOINT;
@@ -31,6 +32,7 @@ function App() {
             </div>
             <Airdrop />
             <Balance />
+            <Toaster />
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
