@@ -10,6 +10,7 @@ import {
 } from '@solana/wallet-adapter-react-ui';
 import { clusterApiUrl } from '@solana/web3.js';
 import Balance from './Balance';
+import "./index.css";
 
 // Default styles that can be overridden by your app
 import '@solana/wallet-adapter-react-ui/styles.css';
@@ -20,19 +21,20 @@ function App() {
 
   return (
     <>
+      <div className="flex justify-center items-center flex-col h-screen">
       <ConnectionProvider endpoint={endpoint.toString()}>
         <WalletProvider wallets={[]} autoConnect>
           <WalletModalProvider>
+            <div className="flex justify-evenly w-screen">
             <WalletMultiButton />
             <WalletDisconnectButton />
-            <div>
-              hi there
             </div>
             <Airdrop />
             <Balance />
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
+      </div>
     </>
   )
 }

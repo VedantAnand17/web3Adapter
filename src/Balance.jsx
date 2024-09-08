@@ -9,7 +9,7 @@ function ShowSolBalance() {
         if (wallet.publicKey) {
 
             const balance = await connection.getBalance(wallet.publicKey);
-            document.getElementById("balance").innerHTML = balance / LAMPORTS_PER_SOL;
+            document.getElementById("balance").innerHTML = balance / LAMPORTS_PER_SOL + " SOL";
         }
     }
     
