@@ -40,7 +40,7 @@ function App() {
             <WalletProvider wallets={[]} autoConnect>
               <WalletModalProvider>
                 <span className='text-2xl text-white font-extrabold mb-12'>Connect your wallet:</span>
-                <div className="flex justify-evenly text-white w-96 max-sm:w-screen">
+                <div className="flex justify-evenly text-white w-96 max-sm:w-screen max-sm:max-w-96">
                   <WalletMultiButton />
                   <WalletDisconnectButton />
                 </div>
