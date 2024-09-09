@@ -17,16 +17,14 @@ import '@solana/wallet-adapter-react-ui/styles.css';
 import Airdrop from './Airdrop';
 import { Toaster } from "@/components/ui/sonner"
 import Background from './assets/background.png';
-import Particles from 'react-tsparticles';
 
 function App() {
   const endpoint = import.meta.env.VITE_API_ENDPOINT;
 
   return (
     <>
-
       <div
-        className="h-screen"
+        className="h-screen responsive-container"
         style={{
           backgroundImage: `url(${Background})`,
           backgroundSize: 'cover',
@@ -34,7 +32,6 @@ function App() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-
         <h1 className='text-white text-7xl mb-44 flex justify-center pt-20 max-md:text-6xl max-md:font-bold max-sm:text-5xl'>
           Web3 Faucet
         </h1>
@@ -43,7 +40,7 @@ function App() {
             <WalletProvider wallets={[]} autoConnect>
               <WalletModalProvider>
                 <span className='text-2xl text-white font-extrabold mb-12'>Connect your wallet:</span>
-                <div className="flex justify-evenly text-white w-96">
+                <div className="flex justify-evenly text-white w-96 max-sm:w-screen">
                   <WalletMultiButton />
                   <WalletDisconnectButton />
                 </div>

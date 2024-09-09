@@ -2,6 +2,7 @@ import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { Button } from "./components/ui/button";
 import { Input } from "@/components/ui/input"
 import { toast } from "sonner"
+import "./index.css";
 
 function Airdrop() {
   const wallet = useWallet();
@@ -31,7 +32,7 @@ function Airdrop() {
   };
 
   return (
-    <div className="flex justify-center items-center flex-col p-5 text-center font-medium">
+    <div className="flex justify-center mx-1 items-center flex-col p-5 text-center font-medium text-lg max-sm:text-xs">
       Welcome to the Airdrop page !!
       <br />
       Wallet: {wallet.publicKey?.toString()}

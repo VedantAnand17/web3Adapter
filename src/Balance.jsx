@@ -14,7 +14,7 @@ function ShowSolBalance() {
     }
     
     getBalance();
-    return <div className="text-center font-medium">
+    return <div className="text-center font-medium text-lg">
         <p>SOL Balance:</p> <div id="balance"></div>
     </div>
 }
