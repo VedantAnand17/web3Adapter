@@ -16,26 +16,44 @@ import "./index.css";
 import '@solana/wallet-adapter-react-ui/styles.css';
 import Airdrop from './Airdrop';
 import { Toaster } from "@/components/ui/sonner"
+import Background from './assets/background.png';
+import Particles from 'react-tsparticles';
 
 function App() {
   const endpoint = import.meta.env.VITE_API_ENDPOINT;
 
   return (
     <>
-      <div className="flex justify-center items-center flex-col h-screen">
-      <ConnectionProvider endpoint={endpoint.toString()}>
-        <WalletProvider wallets={[]} autoConnect>
-          <WalletModalProvider>
-            <div className="flex justify-evenly w-screen">
-            <WalletMultiButton />
-            <WalletDisconnectButton />
-            </div>
-            <Airdrop />
-            <Balance />
-            <Toaster />
-          </WalletModalProvider>
-        </WalletProvider>
-      </ConnectionProvider>
+
+      <div
+        className="h-screen"
+        style={{
+          backgroundImage: `url(${Background})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+
+        <h1 className='text-white text-7xl mb-44 flex justify-center pt-20 max-md:text-6xl max-md:font-bold max-sm:text-5xl'>
+          Web3 Faucet
+        </h1>
+        <div className="flex text-white justify-center items-center flex-col  bg-opacity-75">
+          <ConnectionProvider endpoint={endpoint.toString()}>
+            <WalletProvider wallets={[]} autoConnect>
+              <WalletModalProvider>
+                <span className='text-2xl text-white font-extrabold mb-12'>Connect your wallet:</span>
+                <div className="flex justify-evenly text-white w-96">
+                  <WalletMultiButton />
+                  <WalletDisconnectButton />
+                </div>
+                <Airdrop />
+                <Balance />
+                <Toaster />
+              </WalletModalProvider>
+            </WalletProvider>
+          </ConnectionProvider>
+        </div>
       </div>
     </>
   )

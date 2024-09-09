@@ -21,11 +21,14 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.439.0",
     "next-themes": "^0.3.0",
+    "particle.js": "^1.0.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-tsparticles": "^2.12.2",
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tsparticles": "^3.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

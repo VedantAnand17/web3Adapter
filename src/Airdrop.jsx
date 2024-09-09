@@ -31,11 +31,13 @@ function Airdrop() {
   };
 
   return (
-    <div className="flex justify-center items-center flex-col p-5">
-      Welcome to the Airdrop page, Wallet: {wallet.publicKey?.toString()}
+    <div className="flex justify-center items-center flex-col p-5 text-center font-medium">
+      Welcome to the Airdrop page !!
+      <br />
+      Wallet: {wallet.publicKey?.toString()}
       <div className="flex w-full max-w-sm items-center space-x-2 p-5">
         <Input id="publicKey" type="text" placeholder="Amount" />
-        <Button variant="outline" onClick={handleAirdrop}>
+        <Button className="text-zinc-800" variant="outline" onClick={handleAirdrop} >
           Send Airdrop
         </Button>
       </div>
