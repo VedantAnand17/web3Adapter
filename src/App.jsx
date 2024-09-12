@@ -16,7 +16,6 @@ import "./index.css";
 import '@solana/wallet-adapter-react-ui/styles.css';
 import Airdrop from './Airdrop';
 import { Toaster } from "@/components/ui/sonner"
-import Background from './assets/bg2.jpg';
 
 function App() {
   const endpoint = import.meta.env.VITE_API_ENDPOINT;
