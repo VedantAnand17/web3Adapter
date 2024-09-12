@@ -16,7 +16,7 @@ import "./index.css";
 import '@solana/wallet-adapter-react-ui/styles.css';
 import Airdrop from './Airdrop';
 import { Toaster } from "@/components/ui/sonner"
-import Background from './assets/background.png';
+import Background from './assets/bg2.jpg';
 
 function App() {
   const endpoint = import.meta.env.VITE_API_ENDPOINT;
@@ -24,13 +24,13 @@ function App() {
   return (
     <>
       <div
-        className="h-screen responsive-container"
-        style={{
-          backgroundImage: `url(${Background})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
+        className="h-screen responsive-container bg-gradient-to-r from-zinc-950 to-neutral-900 bg-cover max-md:bg-contain"
+        // style={{
+        //   backgroundImage: `url(${Background})`,
+        //   backgroundSize: 'cover',
+        //   backgroundPosition: 'center',
+        //   backgroundRepeat: 'no-repeat',
+        // }}
       >
         <h1 className='text-white text-7xl mb-44 flex justify-center pt-20 max-md:text-6xl max-md:font-bold max-sm:text-5xl'>
           Web3 Faucet

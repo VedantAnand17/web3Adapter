@@ -36,9 +36,9 @@ function Airdrop() {
       Welcome to the Airdrop page !!
       <br />
       Wallet: {wallet.publicKey?.toString()}
-      <div className="flex w-full max-w-sm items-center space-x-2 p-5">
+      <div className="flex text-zinc-800 w-full max-w-sm items-center space-x-2 p-5">
         <Input id="publicKey" type="text" placeholder="Amount" />
-        <Button className="text-zinc-800" variant="outline" onClick={handleAirdrop} >
+        <Button className="" variant="outline" onClick={handleAirdrop} >
           Send Airdrop
         </Button>
       </div>
