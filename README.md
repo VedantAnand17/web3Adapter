@@ -1,6 +1,6 @@
 # Web3 Wallet Adapter
 
-A modern React application demonstrating Solana wallet integration and SOL token management with a clean, responsive UI built using Tailwind CSS and shadcn/ui components.
+A modern React application demonstrating Solana wallet integration, development token airdrop as a faucet and SOL token management with a clean, responsive UI built using Tailwind CSS and shadcn/ui components.
 
 ## Features
 
